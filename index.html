@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Minesweeper</title>
+</head>
+
+<body onload="init()">
+    <div class="header">
+        <button class="btn" onclick="startGame()">Start Game</button>
+        <br/>
+        <br/>
+        <h2 id="cur_score">
+        </h2>
+        <div id="highscore" class="highscore">
+            <h1>High Score: <span id="sc-value">8</span></h1>
+        </div>
+    </div>
+    <div id="end" class="end">
+        <center>
+            <h2>Game ended!</h2>
+            <span id="newhigh"></span>
+            <h2 id="amt">
+            </h2>
+            <center><button class="btn" onclick="window.location.href = './index.html' ">&#8634 Replay</button></center>
+        </center>
+    </div>
+    <div class="container" id="container"></div>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
